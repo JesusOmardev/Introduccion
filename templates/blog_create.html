@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Blog</title>
+</head>
+<body>
+    <h1>Apartado para crear nuevo Blog</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="id_tittle">
+            Titulo
+            {{form.tittle}}
+        </label>
+        <br>
+        <label for="id_content">
+            Contenido
+            {{form.content}}
+        </label>
+        <br>
+        <button type="sumbit">sumbit</button>
+    </form>
+    <br>
+</body>
+</html>
